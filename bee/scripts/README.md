@@ -11,7 +11,7 @@ This control framework enables a quadrotor drone (BEE project) to autonomously f
 The design ensures **smooth transitions**, **braking during overshoot**, and **robust waypoint tracking**.
 
 <p align="center">
-  <img src="[drone.gif](https://github.com/Ad-Deen/UAV-Project-Bee-Simulations/blob/f5639a6eba68e72ee6b086c0396e574d48b3f74d/drone.gif)" width="600">
+  <img src="drone.gif" width="600">
 </p>
 
 ---
