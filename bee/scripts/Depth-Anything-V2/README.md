@@ -1,5 +1,3 @@
-# Untitled
-
 # 📘 Depth Anything V2 Deployment for Drone → Server 3D Perception
 
 ## Overview
@@ -77,12 +75,22 @@ The GitHub repository does **not include the large model checkpoint files** due 
     - Model: **Depth Anything V2** (`vitb` encoder for balance of speed & accuracy).
     - Output: Dense depth map (`H x W`, float values).
 3. **3D Projection**
-    - Camera intrinsics applied:X=fx(u−cx)⋅Z,Y=−fy(v−cy)⋅Z,Z=depth(u,v)
-        
-        X=(u−cx)⋅Zfx,Y=−(v−cy)⋅Zfy,Z=depth(u,v)X = \frac{(u - c_x) \cdot Z}{f_x}, \quad
-        Y = -\frac{(v - c_y) \cdot Z}{f_y}, \quad
-        Z = \text{depth}(u,v)
-        
+
+    The 3D coordinates can be computed from pixel coordinates \((u, v)\) and depth \(Z\) using the     camera intrinsics:
+
+    \[
+    \begin{aligned}
+    X &= \frac{(u - c_x) \cdot Z}{f_x}, \\
+    Y &= -\frac{(v - c_y) \cdot Z}{f_y}, \\
+    Z &= \text{depth}(u, v)
+    \end{aligned}
+    \]
+
+    Where:  
+    - \(f_x, f_y\) are the focal lengths in pixels.  
+    - \(c_x, c_y\) are the principal point coordinates.  
+    - \(\text{depth}(u, v)\) is the depth value at pixel \((u, v)\).
+      
     - Produces `(N,3)` 3D points.
 4. **Point Cloud Construction**
     - Open3D used to maintain a live **point cloud viewer**.
