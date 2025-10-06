@@ -1,5 +1,3 @@
-# Untitled
-
 # Documentation: Feedforward-PID Based Waypoint Navigation for BEE Drone
 
 ## 1. Overview
