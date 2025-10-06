@@ -14,7 +14,7 @@ Custom controllers for UAV stabilization and navigation, tested in simulation wi
 ### [Monocular Vision Depth Perception (Depth Anything V2)](bee/scripts/Depth-Anything-V2/README.md)
 A deep-learning-based pipeline for monocular depth estimation using Depth Anything V2. Generates dense depth maps for 3D scene reconstruction, odometry, and SLAM integration.
 
-### [Structure-from-Motion (SfM) & Visual Odometry](bee/sfm_practice/Transformers_Age_of_Extinction_Mega_1Step_Bumblebee_Figure 1/README.md)
+### [Structure-from-Motion (SfM) & Visual Odometry](bee/sfm_practice/Transformers_Age_of_Extinction_Mega_1Step_Bumblebee_Figure_1/README.md)
 Multiple pipelines for reconstructing 3D structure from images, including ray-based triangulation, feature-based SfM, and visual odometry.
 
     
