@@ -25,7 +25,7 @@ The SfM pipeline performs the following tasks:
     - Shows tracked features in real-time on the camera feed.
 
 <p align="center">
-    <img src="sfm demo.gif" width="600">
+    <img src="bee/sfm_practice/Transformers_Age_of_Extinction_Mega_1Step_Bumblebee_Figure_1/sfm demo.gif" width="600">
 </p>
 
 ---
