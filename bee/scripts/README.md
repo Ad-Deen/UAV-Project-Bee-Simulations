@@ -9,9 +9,11 @@ This control framework enables a quadrotor drone (BEE project) to autonomously f
 - **ROS 2 node (`DroneAscend`)** to handle sensor feedback, control computations, and actuator commands.
 
 The design ensures **smooth transitions**, **braking during overshoot**, and **robust waypoint tracking**.
+
 <p align="center">
-    <img src="drone.gif" width="600">
+  <img src="drone.gif" width="600">
 </p>
+
 ---
 
 ## 2. Control Architecture
