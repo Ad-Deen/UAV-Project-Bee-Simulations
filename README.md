@@ -6,19 +6,17 @@ BEE is designed as a flexible sandbox for experimenting with new ideas in **auto
 
 ---
 
-## ✈️ Core Components
+✈️ **Core Components**
 
-1. **Flight Controller Development (Simulation)**
-    
-    Custom controllers for UAV stabilization and navigation, tested in simulation with Gazebo/ROS 2. Includes PID-based stabilization, teleoperation scripts, and prototype autonomous control pipelines.
-    
-2. **Monocular Vision Depth Perception (Depth Anything V2)**
-    
-    A deep-learning-based pipeline for monocular depth estimation using *Depth Anything V2*. Generates dense depth maps for 3D scene reconstruction, odometry, and SLAM integration.
-      
-3. **Structure-from-Motion (SfM) & Visual Odometry**
-    
-    Multiple pipelines for reconstructing 3D structure from images, including ray-based triangulation, feature-based SfM, and temporal visual odometry. Provides research flexibility for comparing algorithms.
+### [Flight Controller Development (Simulation)](bee/scripts/README.md)
+Custom controllers for UAV stabilization and navigation, tested in simulation with Gazebo/ROS 2. Includes PID-based stabilization, teleoperation scripts, and prototype autonomous control pipelines.
+
+### [Monocular Vision Depth Perception (Depth Anything V2)](bee/scripts/Depth-Anything-V2/README.md)
+A deep-learning-based pipeline for monocular depth estimation using Depth Anything V2. Generates dense depth maps for 3D scene reconstruction, odometry, and SLAM integration.
+
+### [Structure-from-Motion (SfM) & Visual Odometry](bee/sfm_practice/Transformers_Age_of_Extinction_Mega_1Step_Bumblebee_Figure 1/README.md)
+Multiple pipelines for reconstructing 3D structure from images, including ray-based triangulation, feature-based SfM, and visual odometry.
+
     
 ---
 
