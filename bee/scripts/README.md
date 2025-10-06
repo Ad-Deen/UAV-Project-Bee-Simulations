@@ -46,6 +46,20 @@ This modification improves **stability near targets** and **prevents oscillation
 
 This ensures **deliberate waypoint confirmation** instead of premature switching.
 
+self.waypoints = [
+            (0.0, 0.0, 5.0, 0.0),
+            (0.0, 5.0, 5.0, 0.0),
+            (0.0, 0.0, 5.0, 0.0),
+            (0.0, -5.0, 5.0, 0.0),
+            (3.0, 0.0, 5.0, 0.0),
+            (-3.0, 0.0, 5.0, 0.0),
+            (0.0, 0.0, 1.0, 0.0)
+        ]
+
+<p align="center">
+  <img src="Flight stabiliation in simulation.gif" width="600">
+</p>
+
 ---
 
 ### 2.3 Control Loop
