@@ -1,5 +1,3 @@
-# Untitled
-
 # 🐝 BEE: Multi-Domain Autonomous Drone Project
 
 The **BEE Project** is a modular research platform for developing and testing autonomous UAV capabilities in simulation and embedded hardware. It integrates multiple subsystems under one repository, enabling a complete workflow from **low-level flight control** to **high-level perception and mapping**.
