@@ -15,20 +15,11 @@ BEE is designed as a flexible sandbox for experimenting with new ideas in **auto
 2. **Monocular Vision Depth Perception (Depth Anything V2)**
     
     A deep-learning-based pipeline for monocular depth estimation using *Depth Anything V2*. Generates dense depth maps for 3D scene reconstruction, odometry, and SLAM integration.
-    
-3. **Telemetry & Video Transmission (Wi-Fi)**
-    
-    ESP32-CAM firmware + ROS pipeline for low-latency telemetry and video streaming. Enables real-time remote monitoring and control of the UAV.
-    
-4. **Structure-from-Motion (SfM) & Visual Odometry**
+      
+3. **Structure-from-Motion (SfM) & Visual Odometry**
     
     Multiple pipelines for reconstructing 3D structure from images, including ray-based triangulation, feature-based SfM, and temporal visual odometry. Provides research flexibility for comparing algorithms.
     
-5. **Simulation Assets & Test Environments**
-    
-    URDF/SDF models, drone meshes, and custom Gazebo worlds designed for UAV testing. Includes harmonic world environments, Ackermann steering vehicles, and rich textured assets.
-    
-
 ---
 
 ## 📂 Repository Structure (Highlights)
@@ -56,6 +47,4 @@ BEE is designed as a flexible sandbox for experimenting with new ideas in **auto
 
 - Flight Controller Development
 - Monocular Depth Perception
-- Telemetry & Video Transmission
 - Structure-from-Motion Pipelines
-- Simulation Assets
