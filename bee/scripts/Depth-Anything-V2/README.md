@@ -4,6 +4,10 @@
 
 This deployment pipeline enables a drone equipped with a monocular camera to stream video frames to a ground server. The server runs **Depth Anything V2** to estimate dense depth maps, reconstructs a **3D point cloud** from the inferred depths using known camera intrinsics, and extracts **metric keypoints** for navigation or environment perception.
 
+<p align="center">
+    <img src="depth.gif" width="600">
+</p>
+
 The system has two main components:
 
 1. **Drone (Client)**
