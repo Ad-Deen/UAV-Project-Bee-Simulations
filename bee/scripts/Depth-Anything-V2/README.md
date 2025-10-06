@@ -46,6 +46,23 @@ I --> K["Send to Navigation / Mapping Stack"]
 J --> K
 
 ```
+---
+### Downloading and Replacing Large Checkpoint Files
+
+The GitHub repository does **not include the large model checkpoint files** due to size limitations. You will need to download the complete model folder manually and replace the existing one in the repository.
+
+1. **Download the Model Folder**  
+   Access the full Depth Anything V2 model folder from this link:  
+   [Google Drive: Depth Anything V2](https://drive.google.com/drive/folders/1IHvdllRSrK60f-J9_UO-BMf0u4p2X3Ku?usp=sharing)
+
+2. **Replace the Existing Folder**  
+   - Navigate to the repository folder on your local machine.  
+   - Locate the current `Depth Anything V2` folder.  
+   - Replace it entirely with the folder you downloaded from Google Drive.
+
+3. **Verify the Replacement**  
+   Ensure that the folder structure and checkpoint files match the expected layout in the repository. After replacement, the model should be ready for use without errors.
+
 
 ---
 
