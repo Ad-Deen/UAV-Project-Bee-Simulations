@@ -1,1 +1,63 @@
-# UAV-Project-Bee-Simulations
+# Untitled
+
+# 🐝 BEE: Multi-Domain Autonomous Drone Project
+
+The **BEE Project** is a modular research platform for developing and testing autonomous UAV capabilities in simulation and embedded hardware. It integrates multiple subsystems under one repository, enabling a complete workflow from **low-level flight control** to **high-level perception and mapping**.
+
+BEE is designed as a flexible sandbox for experimenting with new ideas in **autonomous navigation, perception, and communication pipelines**.
+
+---
+
+## ✈️ Core Components
+
+1. **Flight Controller Development (Simulation)**
+    
+    Custom controllers for UAV stabilization and navigation, tested in simulation with Gazebo/ROS 2. Includes PID-based stabilization, teleoperation scripts, and prototype autonomous control pipelines.
+    
+2. **Monocular Vision Depth Perception (Depth Anything V2)**
+    
+    A deep-learning-based pipeline for monocular depth estimation using *Depth Anything V2*. Generates dense depth maps for 3D scene reconstruction, odometry, and SLAM integration.
+    
+3. **Telemetry & Video Transmission (Wi-Fi)**
+    
+    ESP32-CAM firmware + ROS pipeline for low-latency telemetry and video streaming. Enables real-time remote monitoring and control of the UAV.
+    
+4. **Structure-from-Motion (SfM) & Visual Odometry**
+    
+    Multiple pipelines for reconstructing 3D structure from images, including ray-based triangulation, feature-based SfM, and temporal visual odometry. Provides research flexibility for comparing algorithms.
+    
+5. **Simulation Assets & Test Environments**
+    
+    URDF/SDF models, drone meshes, and custom Gazebo worlds designed for UAV testing. Includes harmonic world environments, Ackermann steering vehicles, and rich textured assets.
+    
+
+---
+
+## 📂 Repository Structure (Highlights)
+
+- **`scripts/`** – UAV control logic, perception pipelines, SfM experiments.
+- **`launch/`** – ROS 2 launch files for BEE simulation, RViz, and SfM scanning.
+- **`CameraWebServer_OV5640AF/`** – ESP32-CAM firmware for video streaming.
+- **`Depth-Anything-V2/`** – Monocular depth estimation pipelines.
+- **`ray based approach/` & `visual odometry/`** – Research pipelines for SfM & VO.
+- **`urdf/`, `meshes/`, `worlds/`** – UAV models and Gazebo simulation environments.
+
+---
+
+## 🚀 Usage Workflow
+
+1. **Simulate the Drone** – Launch Gazebo worlds with the BEE URDF and control nodes.
+2. **Enable Flight Control** – Run stabilization/teleop scripts for manual or assisted flight.
+3. **Add Perception** – Launch the Depth Anything V2 pipeline for depth-aware perception.
+4. **Transmit Data** – Use the ESP32-CAM telemetry stack for live video and state streaming.
+5. **Experiment with SfM** – Run visual odometry and structure-from-motion pipelines for 3D reconstruction.
+
+---
+
+## 📚 Documentation Roadmap
+
+- Flight Controller Development
+- Monocular Depth Perception
+- Telemetry & Video Transmission
+- Structure-from-Motion Pipelines
+- Simulation Assets
