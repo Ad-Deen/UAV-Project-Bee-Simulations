@@ -1,6 +1,6 @@
 # Structure-from-Motion (SfM) Core Script Documentation
 
-This script implements a **real-time Structure-from-Motion (SfM)** pipeline using ROS2, OpenCV, Open3D, and CPD for rigid point cloud alignment. It subscribes to camera images and odometry data, computes 3D points from tracked image features, aligns successive frames, and visualizes the reconstructed 3D scene.
+This script (bee/scripts/sfm_core.py) implements a **real-time Structure-from-Motion (SfM)** pipeline using ROS2, OpenCV, Open3D, and CPD for rigid point cloud alignment. It subscribes to camera images and odometry data, computes 3D points from tracked image features, aligns successive frames, and visualizes the reconstructed 3D scene.
 
 ---
 
