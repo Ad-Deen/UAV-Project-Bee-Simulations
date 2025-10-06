@@ -1,5 +1,3 @@
-# Untitled
-
 # Structure-from-Motion (SfM) Core Script Documentation
 
 This script implements a **real-time Structure-from-Motion (SfM)** pipeline using ROS2, OpenCV, Open3D, and CPD for rigid point cloud alignment. It subscribes to camera images and odometry data, computes 3D points from tracked image features, aligns successive frames, and visualizes the reconstructed 3D scene.
@@ -26,6 +24,10 @@ The SfM pipeline performs the following tasks:
     - Visualizes rays, origins, and 3D points in Open3D.
     - Shows tracked features in real-time on the camera feed.
 
+<p align="center">
+    <img src="sfm demo.gif" width="600">
+</p>
+
 ---
 
 ## Workflow
@@ -33,17 +35,18 @@ The SfM pipeline performs the following tasks:
 ### Mermaid Flowchart
 
 ```mermaid
+
 flowchart TD
-    A[Start: Subscribe to Camera & Odometry] --> B[Convert ROS Image to OpenCV Frame]
+    A[Start Subscribe to Camera and Odometry] --> B[Convert ROS Image to OpenCV Frame]
     B --> C[Detect or Track Feature Points]
     C --> D[Compute 2D Orientations from Image Points]
     D --> E[Convert Orientations to 3D Direction Vectors]
     E --> F[Triangulate Rays to Compute 3D Points]
-    F --> G[Align New 3D Points to Accumulated Cloud (CPD)]
+    F --> G[Align New 3D Points to Accumulated Cloud using CPD]
     G --> H[Filter Points using DBSCAN]
     H --> I[Update FIFO Buffer of 3D Points]
-    I --> J[Visualize Rays, Origins, and Point Clouds (Open3D)]
-    J --> K[Publish Velocity Commands (Optional)]
+    I --> J[Visualize Rays Origins and Point Clouds using Open3D]
+    J --> K[Publish Velocity Commands if Needed]
     K --> L[Loop for Next Frame]
     L --> C
 
