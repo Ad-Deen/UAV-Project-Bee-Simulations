@@ -69,6 +69,27 @@ Throttle for each propeller is adjusted as:
 This follows the **standard quadrotor control principle**, but extended with **PID + braking compensation**.
 
 ---
+```mermaid
+flowchart TD
+
+A["Start"] --> B["Initialize ROS2 Node: DroneAscend"]
+B --> C["Subscribe to /odom - Receive Odometry Data"]
+C --> D["Extract Position and Orientation: x y z roll pitch yaw"]
+D --> E["Get Current Target Waypoint"]
+E --> F["Check Proximity to Target - advance_if_reached()"]
+F --> G["Navigate to Target - navigate_to_target()"]
+G --> H["Update PID Controllers: Pitch, Roll, Altitude, Yaw"]
+H --> I["Compute Control Triggers: pitch, roll, yaw, altitude"]
+I --> J["Apply Offsets and Throttle Adjustment"]
+J --> K["Calculate Final Throttle Values"]
+K --> L["Publish Throttle Commands to 4 Propellers"]
+L --> M{"Waypoint Reached?"}
+M -- No --> E
+M -- Yes --> N["Advance to Next Waypoint"]
+N --> E
+
+```
+---
 
 ## 4. Advantages of the Technique
 
